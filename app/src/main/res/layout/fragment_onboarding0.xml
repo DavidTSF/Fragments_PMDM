@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding0Fragment"
+    tools:context=".Onboarding0Fragment"
     android:background="#9c27b0">
 
     <Button
@@ -19,16 +19,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/botonSkip"
+        android:id="@+id/botonSkip0"
         android:layout_width="176dp"
         android:layout_height="58dp"
-        android:background=""
+        android:backgroundTint="#00FFFFFF"
         android:text="Skip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonSiguiente"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintTop_toBottomOf="@+id/botonSiguiente" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

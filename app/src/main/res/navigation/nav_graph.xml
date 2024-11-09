@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/onboarding1Fragment">
+    app:startDestination="@id/onboarding0Fragment">
 
     <fragment
         android:id="@+id/onboarding1Fragment"
@@ -45,14 +45,22 @@
         app:popExitAnim="@anim/slide_out_right" />
     <fragment
         android:id="@+id/onboarding0Fragment"
-        android:name="dev.davveg.fragments.onboarding0Fragment"
+        android:name="dev.davveg.fragments.Onboarding0Fragment"
         android:label="fragment_onboarding0"
         tools:layout="@layout/fragment_onboarding0" >
         <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_onboarding0Fragment_to_onboarding1Fragment"
             app:destination="@id/onboarding1Fragment" />
         <action
             android:id="@+id/action_onboarding0Fragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
 </navigation>

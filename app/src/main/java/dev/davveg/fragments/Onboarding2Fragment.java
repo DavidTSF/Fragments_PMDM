@@ -16,6 +16,7 @@ import android.widget.Button;
 
 
 public class Onboarding2Fragment extends Fragment {
+    Button botonSkip;
     Button botonFinalizar;
     NavController navController;
 
@@ -39,5 +40,6 @@ public class Onboarding2Fragment extends Fragment {
                 navController.navigate(R.id.action_onboarding2Fragment_to_homeFragment);
             }
         });
+
     }
 }
